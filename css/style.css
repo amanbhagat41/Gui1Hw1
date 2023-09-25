@@ -1,39 +1,33 @@
 body {
-  background: linear-gradient(to bottom right, #ee9ca7, #ffdde1);
-  margin-left: 0px;
+  background: linear-gradient(to bottom right, #ee9ca7, #ffdde1); /*used to make the background color gradient*/
+  margin-left: 0px;                                                   /*background did not fit whole window for some reason so margin-left to get it to*/
 }
 
-.ccsticky-nav {
+.ccsticky-nav { /*used to make the sticky header scroll and the zone for the height and width and color of it */
   width: 100%;
   height: auto;
   position: fixed;
   top: 0;
   background: linear-gradient(to right, #ee9ca7, #ffdde1);
 }
-.ccsticky-nav ul {
+.ccsticky-nav ul { /*used to style the words in the sticky header */
   padding: 20px;
   margin: 0 auto;
   list-style: none;
 }
-.main-nav {
+.main-nav {/*used to align the text in the sticky header */
   display: flex;
   align-items: center;
   text-align: left;
 }
-.right-nav {
-  text-align: right;
-}
-.ccsticky-nav ul li {
+.ccsticky-nav ul li { /*used to make all the text in the sticky header to be inline */
   display: inline-block;
   margin: 0 10px;
 }
-.intro{
-  color: white;
-}
-.tenLink{
+.tenLink{/* change the color of text to pink*/
   color: #ee9ca7;
 }
-.ccsticky-nav ul li a {
+.ccsticky-nav ul li a {/*change all styling of the text in the sticky header also the transition */
   padding: 10px 0;
   color: #fff;
   font-size: 1rem;
@@ -42,10 +36,10 @@ body {
   transition: all 0.2s ease;
 }
 
-.ccsticky-nav ul li a:hover {
+.ccsticky-nav ul li a:hover { /* change the color of the words in the sticky header when hovered over*/
   color: #34495e;
 }
-.section1 {
+.section1 {/*contains one section of the website which changes the color and has a scrolldown option if it overflows over the bounds */
   overflow-y: auto;
   width: auto;
   padding: 70px;
@@ -56,7 +50,7 @@ body {
   margin-right: 150px;
   background-color: #008080;
 }
-.section2 {
+.section2 {/*contains one section of the website which changes the color and has a scrolldown option if it overflows over the bounds */
   overflow-y: auto;
   width: auto;
   padding: 50px;
@@ -67,28 +61,29 @@ body {
   margin-right: 150px;
   background-color: #7a5c58;
 }
-h2 {
+h2 {/* change the size and font and color of heading 2*/
   font-size: 36px;
   font-family: Libre Franklin;
   color: white;
 }
-h3 {
+h3 {/*change the font and color of heading 2 */
   font-family: Libre Franklin;
   color: white;
 }
-.intro {
+.intro {/*change the font of the text in the intro */
   font-family: Libre Franklin;
+  color: white;
 }
-h1 {
+h1 {/*changes thg size font and color of heading 1 */
   font-size: 36px;
   font-family: Libre Franklin;
   color: white;
 }
-.content {
+.content {/*makes the images and words have a 60/40 split in the sections */
   display: grid;
   grid-template-columns: 60% 40%;
 }
-.imgs {
+.imgs {/*changes size of the image and makes a transition with them */
   width: 100%;
   max-width: 300px;
   height: auto;
@@ -96,18 +91,18 @@ h1 {
   object-fit: contain;
   border-radius: 50%;
 }
-img:hover {
+img:hover {/*when hovering over images it makes them scale */
   transform: scale(1.1);
   transition: 1s ease;
 }
-.images {
+.images {/*changes the style of the images */
   display: flex;
   justify-content: center;
 }
-.container {
+.container {/*container to make the display flex */
   display: flex;
 }
-table {
+table {/* style the table with borders and shadows*/
   margin-left: auto;
   margin-right: auto;
   margin-bottom: auto;
@@ -119,31 +114,31 @@ table {
   border-radius: 12px 12px 0 0;
 }
 td,
-th {
+th {/*styles the td and th */
   padding: 15px 20px;
   text-align: center;
   padding: 7px;
   border: #4e95f4 thin solid;
 }
-th {
+th {/*styles just the th with different colors and font */
   background-color: #ee9ca7;
   color: #fafafa;
   font-family: fantasy;
   font-weight: 200;
   text-transform: uppercase;
 }
-tr {
+tr {/*changes the tr with a font and color */
   width: 100%;
   background-color: #fafafa;
   font-family: fantasy;
 }
-tr:nth-child(even) {
+tr:nth-child(even) {/*every even tr background color is grey */
   background-color: #eeeeee;
 }
-.table_schedule:hover tr:hover {
+.table_schedule:hover tr:hover {/* when hovering over the schedule background color is pink*/
   background-color: #ffdde1;
 }
-footer {
+footer {/*styles the footer with background and text color */
   text-align: center;
   padding: 3px;
   background-color: #d76d7b;
@@ -151,20 +146,20 @@ footer {
   margin-right: -8px;
   margin-bottom: -10px;
 }
-.footimg {
+.footimg {/* styles the width and height of the images(github)*/
   width: 70px;
   max-width: 300px;
   height: 40px;
   transition: 1s ease;
 }
-.footimgl {
+.footimgl {/* styles the width and height of the images(linkin)*/
   margin-top: 10px;
   width: 40px;
   max-width: 300px;
   height: 40px;
   transition: 1s ease;
 }
-.schedule_text {
+.schedule_text {/*change the font and align of the text in the schedule */
   text-align: center;
   font-family: fantasy;
 }
